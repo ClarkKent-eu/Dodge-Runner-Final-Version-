@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     public AudioClip crashSound;
     public ParticleSystem explosionParticle;
     public ParticleSystem dirtParticle;
-
+    public bool hasPowerup;
 
 
     // Start is called before the first frame update
@@ -55,6 +55,19 @@ public class PlayerController : MonoBehaviour
 
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
 
+
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Powerup"))
+        {
+
+            Destroy(other.gameObject);
+            hasPowerup = true;
+            
+
+
+        }
 
     }
 
@@ -90,6 +103,8 @@ public class PlayerController : MonoBehaviour
             explosionParticle.Play();
 
         }
+      
+
 
 
     }

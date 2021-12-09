@@ -1006,6 +1006,7 @@ MonoBehaviour:
   crashSound: {fileID: 8300000, guid: bbe555e6120a6a447bbb022f5b0ec4e2, type: 3}
   explosionParticle: {fileID: 9125212449759046732, guid: 97d88adcc1c3498458db7c8d7b772e38, type: 3}
   dirtParticle: {fileID: 1438565936, guid: 313af4ca7ea1e304cbcbaa00bb035670, type: 3}
+  hasPowerup: 0
 --- !u!54 &760040694
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3848,7 +3849,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1575660194526043480, guid: 69398704a0a68ba4b9fc4c5cc80199e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -31.1
+      value: -15.12
       objectReference: {fileID: 0}
     - target: {fileID: 1575660194526043480, guid: 69398704a0a68ba4b9fc4c5cc80199e4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3856,7 +3857,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1575660194526043480, guid: 69398704a0a68ba4b9fc4c5cc80199e4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 83.09
+      value: 92.48
       objectReference: {fileID: 0}
     - target: {fileID: 1575660194526043480, guid: 69398704a0a68ba4b9fc4c5cc80199e4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3890,8 +3891,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Powerup
       objectReference: {fileID: 0}
+    - target: {fileID: 1575660194526043484, guid: 69398704a0a68ba4b9fc4c5cc80199e4, type: 3}
+      propertyPath: m_TagString
+      value: Powerup
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69398704a0a68ba4b9fc4c5cc80199e4, type: 3}
+--- !u!1 &1575660194181650120 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1575660194526043484, guid: 69398704a0a68ba4b9fc4c5cc80199e4, type: 3}
+  m_PrefabInstance: {fileID: 1575660194181650119}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1575660194181650121
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575660194181650120}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &6154769667307269363
 PrefabInstance:
   m_ObjectHideFlags: 0
