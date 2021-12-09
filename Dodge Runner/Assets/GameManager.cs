@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     //Restart button function
 
     public Button restartButton;
+    
 
 
     public TextMeshproUGUI gameOverText;
@@ -55,18 +56,12 @@ public class GameManager : MonoBehaviour
     void Start()
     {
 
-
-
-    }
-
-
-    public void gameOver()
-    {
-
-
-        gameOverText.gameObject.Equals(true);
+       
 
     }
+
+
+
 
 
     private void OnTriggerEnter(Collider other)

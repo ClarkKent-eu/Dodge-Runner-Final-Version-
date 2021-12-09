@@ -9,7 +9,10 @@ using UnityEngine.SceneManagement;
 
 public class playButton : MonoBehaviour
 {
-public void GotoMapMenu()
+
+
+    public string URL= "https://github.com/ClarkKent-eu/Dodge-Runner-Final-Version-";
+   public void GotoMapMenu()
     {
 
         SceneManager.LoadScene("Main Menu 2");
@@ -31,5 +34,12 @@ public void GotoMapMenu()
 
     }
 
+
+    public void sourcecode()
+    {
+
+        Application.OpenURL("The source code on Github");
+
+    }
 
 }

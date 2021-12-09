@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem explosionParticle;
     public ParticleSystem dirtParticle;
     public bool hasPowerup;
+    public TextMeshproUGUI gameOverText;
 
 
     // Start is called before the first frame update
@@ -64,7 +65,7 @@ public class PlayerController : MonoBehaviour
 
             Destroy(other.gameObject);
             hasPowerup = true;
-            
+            speed = 40;
 
 
         }
@@ -98,6 +99,8 @@ public class PlayerController : MonoBehaviour
             gameObject.SetActive(true);
             GameOver.text = "Game Over";
             dirtParticle.Stop();
+
+        
 
 
             explosionParticle.Play();
