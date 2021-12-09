@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
 
 
     public List<GameObject> targets;
+    //Restart button function
+
     public Button restartButton;
     public TextMeshproUGUI gameOverText;
     private object gameManager;
