@@ -13,14 +13,30 @@ public class GameManager : MonoBehaviour
     //Restart button function
 
     public Button restartButton;
+
+
     public TextMeshproUGUI gameOverText;
+
+
     private object gameManager;
+
+
     public object GameOver;
 
     public void GameOver1()
     {
 
         restartButton.gameObject.SetActive(true);
+        
+
+
+
+    }
+
+
+    public void playGame()
+    {
+        // play game function for the menu
         
 
 
