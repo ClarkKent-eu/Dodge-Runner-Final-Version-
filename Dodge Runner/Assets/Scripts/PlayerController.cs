@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     public GameObject LevelPassedText;
     public GameObject VictoryDance;
     public AudioSource Audio;
-    
+
 
 
     // Start is called before the first frame update
@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
         playerRb = GetComponent<Rigidbody>();
         playerAudio = GetComponent<AudioSource>();
         Physics.gravity *= gravityModifier;
-        
+
 
 
     }
@@ -79,40 +79,40 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-       
+
 
         if (collision.gameObject.CompareTag("Ground"))
         {
             isOnGround = true;
             dirtParticle.Stop();
-           
+
         }
 
         else if (collision.gameObject.CompareTag("Obstacle"))
         {
             //If the player collides with the obstacle "an object with the tag osbstacle"
             isOnGround = false;
-            
+
             //Game Over 
             Debug.Log("Game Over!");
             Destroy(gameObject);
             playerAudio.PlayOneShot(crashSound, 1.0f);
             explosionParticle.Play();
-      
-          
+
+
             dirtParticle.Stop();
 
 
             //For the game over text to appearr on the screen 
             gameOverText.SetActive(true);
-             
-        
+
+
 
 
             explosionParticle.Play();
 
         }
-      
+
         if (collision.gameObject.CompareTag("LevelPassed"))
         {
 
@@ -120,19 +120,27 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Level Passed!");
             LevelPassedText.SetActive(true);
             VictoryDance.SetActive(true);
-           
+
 
 
 
         }
 
 
+        if (collision.gameObject.CompareTag("enemy"))
+        {
+            Destroy(gameObject);
+            gameOverText.SetActive(true);
+
+
+
+
+        }
+
     }
 
-}
 
-
-        
+}        
             
     
 
