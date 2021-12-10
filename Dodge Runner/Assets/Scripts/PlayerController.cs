@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem dirtParticle;
     public bool hasPowerup;
     public TextMeshproUGUI gameOverText;
+    
 
 
     // Start is called before the first frame update
@@ -66,6 +67,7 @@ public class PlayerController : MonoBehaviour
             Destroy(other.gameObject);
             hasPowerup = true;
             speed = 40;
+            jumpForce = 20;
 
 
         }
@@ -97,9 +99,9 @@ public class PlayerController : MonoBehaviour
             playerAudio.PlayOneShot(crashSound, 1.0f);
             explosionParticle.Play();
             gameObject.SetActive(true);
-            GameOver.text = "Game Over";
+          
             dirtParticle.Stop();
-
+          
         
 
 
@@ -107,7 +109,14 @@ public class PlayerController : MonoBehaviour
 
         }
       
+        if (collision.gameObject.CompareTag("LevelPassed"))
+        {
 
+            Destroy(gameObject);
+            Debug.Log("Level Passed!");
+
+
+        }
 
 
     }

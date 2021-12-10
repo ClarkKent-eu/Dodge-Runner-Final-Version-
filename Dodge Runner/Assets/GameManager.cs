@@ -13,16 +13,14 @@ public class GameManager : MonoBehaviour
     //Restart button function
 
     public Button restartButton;
-    
-
-
-    public TextMeshproUGUI gameOverText;
+    public TextMeshproUGUI gameOverTextUGUI;
 
 
     private object gameManager;
 
 
     public object GameOver;
+    private TextMeshPro gameOverTextUIGUI;
 
     public void GameOver1()
     {
@@ -55,9 +53,9 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-       
-
+        
+        gameOverTextUIGUI = GetComponent<TextMeshPro>();
+        gameOverTextUIGUI.enabled = true;
     }
 
 
