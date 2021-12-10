@@ -13,14 +13,14 @@ public class GameManager : MonoBehaviour
     //Restart button function
 
     public Button restartButton;
-    public TextMeshproUGUI gameOverTextUGUI;
+    
 
 
     private object gameManager;
 
 
-    public object GameOver;
-    private TextMeshPro gameOverTextUIGUI;
+
+
 
     public void GameOver1()
     {
@@ -54,27 +54,12 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         
-        gameOverTextUIGUI = GetComponent<TextMeshPro>();
-        gameOverTextUIGUI.enabled = true;
+  
         
     }
 
 
-
-
-
-    private void OnTriggerEnter(Collider other)
-    {
-        Destroy(gameObject);
-        if (!gameObject.CompareTag("GameOver"))
-        {
-         
-
-
-        }
-
-
-    }
+    
 
 
 

@@ -7,9 +7,6 @@ using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
-
-    public TextMeshPro GameOver;
-
     public float speed = 40.0f;
     private Rigidbody playerRb;
     public float jumpForce = 17;
@@ -23,10 +20,10 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem explosionParticle;
     public ParticleSystem dirtParticle;
     public bool hasPowerup;
-   
     public GameObject gameOverText;
     public GameObject LevelPassedText;
     public GameObject VictoryDance;
+    public AudioSource Audio;
     
 
 
@@ -39,7 +36,7 @@ public class PlayerController : MonoBehaviour
         playerRb = GetComponent<Rigidbody>();
         playerAudio = GetComponent<AudioSource>();
         Physics.gravity *= gravityModifier;
-     
+        
 
 
     }
@@ -95,7 +92,7 @@ public class PlayerController : MonoBehaviour
         {
             //If the player collides with the obstacle "an object with the tag osbstacle"
             isOnGround = false;
-            gameOver = true;
+            
             //Game Over 
             Debug.Log("Game Over!");
             Destroy(gameObject);
@@ -123,6 +120,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Level Passed!");
             LevelPassedText.SetActive(true);
             VictoryDance.SetActive(true);
+           
 
 
 
