@@ -10,4 +10,27 @@
 
 Game :
 
-Dodge Runner
+Dodge Runner (The Final Version)
+
+
+-Details: 
+
+we plan on polishing up the menu , adding effects // sound effects and new features.
+
+-better user navigation or GUI
+
+
+-The power features for a super ability
+
+
+
+
+
+
+
+
+
+
+
+
+
