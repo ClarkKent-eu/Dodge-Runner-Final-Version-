@@ -11,17 +11,12 @@ public class playButton : MonoBehaviour
 {
 
 
-    public string URL= "https://clarkkent-eu.github.io/Dodge-Runner-Final-Version-/";
+    public string URL= "https://github.com/ClarkKent-eu/Dodge-Runner-Final-Version-";
     public void GotoMapMenu() {
 
 
 
         SceneManager.LoadScene("Main Menu 1");
-
-
-
-
-
 
 
 
