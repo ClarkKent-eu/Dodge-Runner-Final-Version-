@@ -71,7 +71,7 @@ public class PlayerController : MonoBehaviour
             jumpForce = 30;
 
             playerAudio.PlayOneShot(pickup, 1.0f);
-
+            Debug.Log("Level Passed");
 
         }
 
