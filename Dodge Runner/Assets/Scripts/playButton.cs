@@ -12,7 +12,25 @@ public class playButton : MonoBehaviour
 
 
     public string URL= "https://clarkkent-eu.github.io/Dodge-Runner-Final-Version-/";
-   public void GotoMapMenu()
+    public void GotoMapMenu() {
+
+
+
+        SceneManager.LoadScene("Main Menu 1");
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+   public void GotoMapMenu1()
     {
 
         SceneManager.LoadScene("Main Menu 2");
@@ -33,6 +51,8 @@ public class playButton : MonoBehaviour
 
 
     }
+
+
 
 
     public void sourcecode()

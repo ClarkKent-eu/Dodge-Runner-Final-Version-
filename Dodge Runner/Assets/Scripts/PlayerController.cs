@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     public GameObject LevelPassedText;
     public GameObject VictoryDance;
     public AudioSource Audio;
+    public GameObject retry;
 
 
 
@@ -101,7 +102,7 @@ public class PlayerController : MonoBehaviour
             Destroy(gameObject);
             playerAudio.PlayOneShot(crashSound, 1.0f);
             explosionParticle.Play();
-
+            retry.SetActive(true);
 
             dirtParticle.Stop();
 
