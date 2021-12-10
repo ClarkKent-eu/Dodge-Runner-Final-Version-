@@ -1310,7 +1310,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 863459722}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -44.76, y: 4, z: 250.21}
+  m_LocalPosition: {x: -44.76, y: 4, z: 225}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 943241652}
@@ -2188,6 +2188,7 @@ MonoBehaviour:
   gameOver: 0
   jumpSound: {fileID: 8300000, guid: c54f88e1410fa1146a4b625c719bbb6a, type: 3}
   crashSound: {fileID: 8300000, guid: bbe555e6120a6a447bbb022f5b0ec4e2, type: 3}
+  pickup: {fileID: 8300000, guid: 0edac9f124deac24cbac2920fcfb84e9, type: 3}
   explosionParticle: {fileID: 9125212449759046732, guid: 97d88adcc1c3498458db7c8d7b772e38, type: 3}
   dirtParticle: {fileID: 1438565936, guid: 313af4ca7ea1e304cbcbaa00bb035670, type: 3}
   hasPowerup: 0
@@ -4185,7 +4186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1575660194526043480, guid: 69398704a0a68ba4b9fc4c5cc80199e4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 117.7
+      value: 108.17
       objectReference: {fileID: 0}
     - target: {fileID: 1575660194526043480, guid: 69398704a0a68ba4b9fc4c5cc80199e4, type: 3}
       propertyPath: m_LocalRotation.w

@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     private AudioSource playerAudio;
     public AudioClip jumpSound;
     public AudioClip crashSound;
+    public AudioClip pickup;
     public ParticleSystem explosionParticle;
     public ParticleSystem dirtParticle;
     public bool hasPowerup;
@@ -66,8 +67,10 @@ public class PlayerController : MonoBehaviour
 
             Destroy(other.gameObject);
             hasPowerup = true;
-            speed = 40;
-            jumpForce = 20;
+            speed = 20;
+            jumpForce = 30;
+
+            playerAudio.PlayOneShot(pickup, 1.0f);
 
 
         }
@@ -131,11 +134,14 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(gameObject);
             gameOverText.SetActive(true);
-
+            
 
 
 
         }
+
+
+   
 
     }
 
