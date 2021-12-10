@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
    
     public GameObject gameOverText;
     public GameObject LevelPassedText;
+    public GameObject VictoryDance;
     
 
 
@@ -120,6 +121,9 @@ public class PlayerController : MonoBehaviour
 
             Destroy(gameObject);
             Debug.Log("Level Passed!");
+            LevelPassedText.SetActive(true);
+            VictoryDance.SetActive(true);
+
 
 
         }
