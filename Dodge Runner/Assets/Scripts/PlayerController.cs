@@ -23,7 +23,9 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem explosionParticle;
     public ParticleSystem dirtParticle;
     public bool hasPowerup;
-    public TextMeshproUGUI gameOverText;
+   
+    public GameObject gameOverText;
+    public GameObject LevelPassedText;
     
 
 
@@ -36,7 +38,7 @@ public class PlayerController : MonoBehaviour
         playerRb = GetComponent<Rigidbody>();
         playerAudio = GetComponent<AudioSource>();
         Physics.gravity *= gravityModifier;
-
+     
 
 
     }
@@ -98,10 +100,14 @@ public class PlayerController : MonoBehaviour
             Destroy(gameObject);
             playerAudio.PlayOneShot(crashSound, 1.0f);
             explosionParticle.Play();
-            gameObject.SetActive(true);
+      
           
             dirtParticle.Stop();
-          
+
+
+            //For the game over text to appearr on the screen 
+            gameOverText.SetActive(true);
+             
         
 
 

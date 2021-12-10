@@ -56,6 +56,7 @@ public class GameManager : MonoBehaviour
         
         gameOverTextUIGUI = GetComponent<TextMeshPro>();
         gameOverTextUIGUI.enabled = true;
+        
     }
 
 
